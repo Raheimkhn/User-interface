@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Responsive menu dropdown</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo">APT</a>
+
+            <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+            
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+                    <a href="" class="nav__perfil">
+                        <div class="nav__img">
+                            <!-- <img src="/unnamed.png" alt=""> -->
+                        </div>
+                        <div>
+                            <span class="nav__name">APT</span>
+                        </div>
+                    </a>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav_item"><a href="C:\Users\Lenovo\OneDrive\Desktop\Assignment\index (1).html" class="nav_link active">Home</a></li>
+    
+                          
+
+                            <li class="nav_item"><a href="C:\Users\Lenovo\OneDrive\Desktop\Assignment\signup.html" class="nav_link">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <div class="wrapper">
+            <div id="search-container">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search product name here.."
+              />
+              <button id="search">Search</button>
+            </div>
+            <div id="buttons">
+              <button class="button-value" onclick="filterProduct('all')">All</button>
+              <button class="button-value" onclick="filterProduct('smartphones')">
+                smartphones
+              </button>
+              <button class="button-value" onclick="filterProduct('home-decoration')">
+                home-decoration
+              </button>
+              <button class="button-value" onclick="filterProduct('skincare')">
+                skincare
+              </button>
+              <button class="button-value" onclick="filterProduct('fragrances')">
+                fragrances
+              </button>
+            </div>
+            <div id="products"></div>
+          </div>
+        
+          <div class="contact-us">
+
+          </div>
+          </body>
+         
+      
+              <!--===== MAIN JS =====-->
+              <script src="script.js"></script>
+          </body>
+      </html>
+      
+
